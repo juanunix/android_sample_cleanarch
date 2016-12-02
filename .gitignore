@@ -10,3 +10,4 @@
 .idea
 gradlew.bat
 gradlew
+.gradle/*

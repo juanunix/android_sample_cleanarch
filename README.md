@@ -1,7 +1,10 @@
 # Android Sample Code (CleanArch)
-======================================================
+
 @author Felipe Porge Xavier - contact@felipeporge.com
-======================================================
+
+=== Introduction ===
+
+This project was published on Google Play Store: https://play.google.com/store/apps/details?id=com.felipeporge.sample
 
 This repository stores a sample Android project to demonstrate my code style. This project was developed by using Dagger 2 and applying the concept of the Clean Architecture.
 
