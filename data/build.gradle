@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// Gradle constants.
+ext {
+    // FOR TESTS:
+    JUNIT_VERSION = '4.12'
+    ESPRESSO_VERSION = '2.2.2'
+
+    // FOR GENERAL:
+    ANDROID_SUPPORT_VERSION = '25.0.0'
+}
+
+dependencies {
+    // Jar Libs:
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // ** Domain Layer ** :
+    compile project(":domain")
+
+
+    // Android Support:
+    compile "com.android.support:appcompat-v7:$ANDROID_SUPPORT_VERSION"
+
+    // Tests:
+    testCompile "junit:junit:$JUNIT_VERSION"
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$ESPRESSO_VERSION", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+}

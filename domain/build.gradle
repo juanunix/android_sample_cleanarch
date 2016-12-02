@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+
+// Gradle constants.
+ext {
+    // FOR TESTS:
+    JUNIT_VERSION = '4.12'
+}
+
+dependencies {
+    // Jar Libs:
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Tests:
+    testCompile "junit:junit:$JUNIT_VERSION"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

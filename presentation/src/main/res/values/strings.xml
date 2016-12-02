@@ -1,0 +1,84 @@
+<resources>
+    <!-- General - BEGIN -->
+    <string name="app_name">SampleFPX</string>
+    <string name="general_loading">Loading...</string>
+    <!-- General - END -->
+
+    <!-- WalkthroughActivity - BEGIN -->
+    <string name="walkthrough_close">close</string>
+
+    <array name="walkthrough_images">
+        <item>ic_loyalty_white_48dp</item>
+        <item>ic_shopping_cart_white_48dp</item>
+        <item>ic_gavel_white_48dp</item>
+        <item>ic_store_white_48dp</item>
+    </array>
+
+    <array name="walkthrough_titles">
+        <item>Your dream, your bid</item>
+        <item>Wait anxiously</item>
+        <item>Be happy</item>
+        <item>Sell something</item>
+    </array>
+
+    <array name="walkthrough_descriptions">
+        <item>Search for items you ever dreamt to have</item>
+        <item>Buy all items you ever dreamt to have</item>
+        <item>Have fun with your new bought items</item>
+        <item>Your house will be beautiful forever</item>
+    </array>
+    <!-- WalkthroughActivity - END -->
+
+    <!-- LoginActivity - BEGIN -->
+    <string name="login_email_hint">E-mail... (e.g.: mail@mail.com)</string>
+    <string name="login_password_hint">Password...(e.g.: 12345678)</string>
+    <string name="login_sign_in">Login</string>
+    <string name="login_forgot_pass">Forgot your password?</string>
+    <string name="login_sign_up">Sign up</string>
+
+    <string name="login_invalid_email">Invalid email. Please, fill in with your registered e-mail.</string>
+    <string name="login_invalid_password">Invalid password. Please, fill in with your registered password.</string>
+
+    <string name="login_user_not_found">Invalid email/password. Please, verify your information and try again.</string>
+    <string name="login_welcome">Welcome, %s.</string>
+
+    <string name="login_change_password_failure">An error occurred when trying to change your password. Please, try again.</string>
+    <string name="login_change_password_invalid_data">Your information does not match with any user. Verify it and try again.</string>
+    <string name="login_change_password_success">Your password was successfully changed.</string>
+
+    <!-- ForgotPasswordDialog - BEGIN -->
+    <string name="forgot_password_title">Define a new password</string>
+    <string name="forgot_password_description">Please, fill in this form:</string>
+    <string name="forgot_password_email_hint">Your email...</string>
+    <string name="forgot_password_birthday_hint">Select your birthday...</string>
+    <string name="forgot_password_doc_code_hint">Your document code/number...</string>
+    <string name="forgot_password_new_password_hint">A new password...</string>
+    <string name="forgot_password_new_password_confirm_hint">Repeat the new password...</string>
+    <string name="forgot_password_change_password">Change password</string>
+    <!-- ForgotPasswordDialog - END -->
+
+    <!-- LoginActivity - END -->
+
+    <!-- Main ActionBar - BEGIN -->
+    <string name="main_action_logout">Logout</string>
+    <!-- Main ActionBar - END -->
+
+    <!-- MainActivity - BEGIN -->
+    <string name="main_login_error">Your login expired. Please, try to sign in again...</string>
+    <!-- MainActivity - END -->
+
+    <!-- ItemListFragment - BEGIN -->
+    <string name="item_list_title">Item List</string>
+    <string name="item_list_no_items">No active items at this moment</string>
+    <string name="item_list_failure">An error occurred when trying to load the items.</string>
+    <!-- ItemListFragment - END -->
+
+    <!-- ItemDetailsActivity - BEGIN -->
+    <string name="item_details_title">Item details</string>
+    <string name="item_details_close">Close</string>
+    <!-- ItemDetailsActivity - END -->
+
+    <!-- BirthdayPickerDialog - BEGIN -->
+    <string name="birthday_picker_invalid_birthday">Please, select a valid birth date.</string>
+    <!-- BirthdayPickerDialog - END -->
+</resources>

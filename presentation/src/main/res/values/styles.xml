@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Themes - BEGIN -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccentDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.PrimaryColorBg" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/layer_list_icon</item>
+    </style>
+
+    <style name="AppTheme.Walkthrough" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/colorAccentDark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base Themes - END -->
+
+
+    <!-- Text styles - BEGIN -->
+
+    <style name="AppTheme.TitleSingleLine">
+        <item name="android:textColor">@color/grey_700</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="AppTheme.Subtitle">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.SubtitleSingleLine" parent="AppTheme.Subtitle">
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Text styles - END -->
+
+
+    <!-- Button styles - BEGIN -->
+
+    <style name="AppTheme.Button" parent="AppTheme">
+        <item name="android:elevation" tools:targetApi="lollipop">2dp</item>
+        <item name="android:stateListAnimator" tools:targetApi="lollipop">@null</item>
+
+        <item name="android:background">@drawable/bt_accent_selector</item>
+        <item name="android:layout_height">48dp</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Button styles - END -->
+
+
+    <!-- EditText styles - BEGIN -->
+
+    <style name="AppTheme.EditText" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/input_bg</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="AppTheme.FlyingEditText" parent="AppTheme.EditText">
+        <item name="android:elevation" tools:targetApi="lollipop">2dp</item>
+    </style>
+
+    <!-- EditText styles - BEGIN -->
+
+</resources>
