@@ -9,13 +9,13 @@ def getDateStamp() {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "25.0.1"
     defaultConfig {
         applicationId "com.felipeporge.sample"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0.0 build " + getDateStamp()
+        versionCode 2
+        versionName "1.0.1 build " + getDateStamp()
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
