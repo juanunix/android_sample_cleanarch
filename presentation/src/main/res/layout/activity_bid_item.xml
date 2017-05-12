@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey_100"
+            fresco:placeholderImage="@drawable/default_auction_item_img"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:failureImage="@drawable/default_auction_item_img"
+            fresco:failureImageScaleType="fitCenter"
+            android:id="@+id/bid_item_image_sdv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                style="@style/AppTheme.TitleSingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/bid_item_sold_item_tv"
+                android:visibility="gone"
+                android:textColor="@color/orange_700"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                style="@style/AppTheme.TitleSingleLine"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bid_item_title_tv"
+                android:text="Item 1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/AppTheme.TitleSingleLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bid_item_starting_bid"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        style="@style/AppTheme.TitleSingleLine"
+                        android:textSize="22sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bid_item_starting_bid_tv"
+                        android:text="$ 25.00"
+                        android:gravity="end"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        style="@style/AppTheme.SubtitleSingleLine"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bid_item_bid_count_tv"
+                        android:gravity="end"
+                        android:text="2 bids"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/AppTheme.SubtitleSingleLine"
+                android:textSize="14sp"
+                android:maxLines="100"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bid_item_description_tv"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+
+            <TextView
+                android:layout_marginTop="24dp"
+                style="@style/AppTheme.TitleSingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bid_item_bid_description"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/AppTheme.TitleSingleLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="$"
+                    android:layout_marginStart="16dp"/>
+
+                <EditText
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:hint="@string/bid_item_bid_value_hint"
+                    android:id="@+id/bid_item_bid_value_et"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:textSize="14sp"
+                    android:layout_marginStart="8dp"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/AppTheme.TitleSingleLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bid_item_time_left"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    style="@style/AppTheme.TitleSingleLine"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="24d 3h 2m"
+                    android:id="@+id/bid_item_time_left_tv"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:text="@string/bid_item_place_bid"
+            android:id="@+id/bid_item_place_bid_bt"/>
+
+    </LinearLayout>
+</ScrollView>

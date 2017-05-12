@@ -1,6 +1,6 @@
 <resources>
     <!-- General - BEGIN -->
-    <string name="app_name">SampleFPX</string>
+    <string name="app_name">AuctionSys</string>
     <string name="general_loading">Loading...</string>
     <!-- General - END -->
 
@@ -22,15 +22,15 @@
     </array>
 
     <array name="walkthrough_descriptions">
-        <item>Search for items you ever dreamt to have</item>
-        <item>Buy all items you ever dreamt to have</item>
-        <item>Have fun with your new bought items</item>
-        <item>Your house will be beautiful forever</item>
+        <item>Search for items you ever dreamt to have and make your bid</item>
+        <item>Wait for the remaining time of the auction always verifying if your bid will win</item>
+        <item>Have fun with your new items bought with your bids</item>
+        <item>Make some money selling items using our auction system</item>
     </array>
     <!-- WalkthroughActivity - END -->
 
     <!-- LoginActivity - BEGIN -->
-    <string name="login_email_hint">E-mail... (e.g.: mail@mail.com)</string>
+    <string name="login_email_hint">E-mail... (e.g.: bot@auctionsys.com)</string>
     <string name="login_password_hint">Password...(e.g.: 12345678)</string>
     <string name="login_sign_in">Login</string>
     <string name="login_forgot_pass">Forgot your password?</string>
@@ -59,6 +59,13 @@
 
     <!-- LoginActivity - END -->
 
+    <!-- MainTabs - BEGIN -->
+    <string name="main_tab_items">Auction</string>
+    <string name="main_tab_bidding">Bidding</string>
+    <string name="main_tab_won">Won</string>
+    <string name="main_tab_store">Store</string>
+    <!-- MainTabs - END -->
+
     <!-- Main ActionBar - BEGIN -->
     <string name="main_action_logout">Logout</string>
     <!-- Main ActionBar - END -->
@@ -67,16 +74,105 @@
     <string name="main_login_error">Your login expired. Please, try to sign in again...</string>
     <!-- MainActivity - END -->
 
-    <!-- ItemListFragment - BEGIN -->
-    <string name="item_list_title">Item List</string>
-    <string name="item_list_no_items">No active items at this moment</string>
-    <string name="item_list_failure">An error occurred when trying to load the items.</string>
-    <!-- ItemListFragment - END -->
+    <!-- BiddingItemListFragment - BEGIN -->
+    <string name="bidding_title">Bidding Items</string>
+    <string name="bidding_no_items">No bidding items</string>
+    <string name="bidding_failure">An error occurred when trying to load bidding items.</string>
+    <!-- BiddingItemListFragment - END -->
 
-    <!-- ItemDetailsActivity - BEGIN -->
-    <string name="item_details_title">Item details</string>
-    <string name="item_details_close">Close</string>
-    <!-- ItemDetailsActivity - END -->
+    <!-- AuctionItemListFragment - BEGIN -->
+    <string name="auction_items_title">Auction Items</string>
+    <string name="auction_items_no_items">No active auction items at this moment</string>
+    <string name="auction_items_failure">An error occurred when trying to load auction items.</string>
+    <!-- AuctionItemListFragment - END -->
+
+    <!-- StoreFragment - BEGIN -->
+    <string name="store_title">%s\'s Store</string>
+    <string name="store_no_items">No active items in your store</string>
+    <string name="store_failure">An error occurred when trying to load your store items.</string>
+    <!-- StoreFragment - END -->
+
+    <!-- WonItemListFragment - BEGIN -->
+    <string name="won_items_title">Won items</string>
+    <string name="won_items_no_items">No won items</string>
+    <string name="won_items_failure">An error occurred when trying to load won items.</string>
+    <!-- WonItemListFragment - END -->
+
+    <!-- AuctionItemRvAdapter - BEGIN -->
+    <string name="row_auction_item_bid">1 bid</string>
+    <string name="row_auction_item_bids">%d bids</string>
+    <string name="row_auction_finished">finished</string>
+    <string name="row_auction_sold">sold</string>
+    <!-- AuctionItemRvAdapter - END -->
+
+    <!-- AddEditItemActivity - BEGIN -->
+    <string name="add_edit_item_add_title">Add new item</string>
+    <string name="add_edit_item_edit_title">Edit item</string>
+    <string name="add_edit_item_title_hint">Awesome item title...</string>
+    <string name="add_edit_item_starting_bid_hint">Starting bid (e.g. $ 25.00)</string>
+    <string name="add_edit_item_description_hint">Incredible item description...</string>
+    <string name="add_edit_item_save">Save and Publish</string>
+
+    <string name="add_edit_item_note">NOTE: Each auction finishes 15 minutes after the item creation.</string>
+    <string name="add_edit_item_click_to_change">Click to change this image</string>
+
+    <string name="add_edit_item_invalid_title">The title is too short...</string>
+    <string name="add_edit_item_invalid_description">The description is too short...</string>
+    <string name="add_edit_item_invalid_starting_bid">Invalid starting bid. Please, verify your information...</string>
+
+    <string name="add_edit_item_successfully_saved">The item was successfully saved!</string>
+    <string name="add_edit_item_saving_failure">An error occurred when trying to save the item. Please, try again...</string>
+
+    <!-- ChangeImageDialog - BEGIN -->
+    <string name="change_img_title">Define a new image</string>
+    <string name="change_img_desc">Please, enter with a web image URL:</string>
+    <string name="change_img_hint">Image URL...\n(e.g.: http://imgs.com/img1.png)</string>
+    <string name="change_img_save">Save</string>
+
+    <string name="add_edit_item_sold_for">This item was sold for %s!</string>
+    <string name="add_edit_item_finished">This auction was finished.</string>
+    <!-- ChangeImageDialog - END -->
+
+    <!-- AddEditItemActivity - END -->
+
+    <!-- SignUpActivity - BEGIN -->
+    <string name="sign_up_title">Registration form</string>
+    <string name="sign_up_description">Please, fill in this form with your personal information to sign up and start using our auction system:</string>
+    <string name="sign_up_name_hint">Your full name...</string>
+    <string name="sign_up_doc_code_hint">A document code/number...</string>
+    <string name="sign_up_birthday_hint">Select your birthday...</string>
+    <string name="sign_up_email_hint">Your email...</string>
+    <string name="sign_up_password_hint">Your password...</string>
+    <string name="sign_up_password_confirm_hint">Repeat your password...</string>
+    <string name="sign_up_send">Sign up and Login</string>
+
+    <string name="sign_up_invalid_name">Invalid name. Please, fill in with your full name.</string>
+    <string name="sign_up_invalid_email">Invalid email. Please, fill in with a valid e-mail.</string>
+    <string name="sign_up_invalid_confirm_password">Invalid password confirmation. Please, try to fill in it again.</string>
+    <string name="sign_up_invalid_password">Invalid password. Your password can only contain 8 to 12 numbers/letters.</string>
+    <string name="sign_up_invalid_document">Invalid document. Please, fill in with a document code/number.</string>
+    <string name="sign_up_invalid_birthday">Invalid birthday. Please, select your birthday to continue.</string>
+
+    <string name="sign_up_email_already_registered">This e-mail was already registered. Try to recovery your password on Login screen.</string>
+    <string name="sign_up_email_validation_failure">An error occurred when trying to validate this e-mail. Please, try it again.</string>
+
+    <string name="sign_up_success">Successfully registered. Welcome to AuctionSys, %s.</string>
+    <string name="sign_up_failed">Registration failed. Please, try again later.</string>
+    <!-- SignUpActivity - END -->
+
+    <!-- BidItemActivity - BEGIN -->
+    <string name="bid_item_title">Item details</string>
+    <string name="bid_item_bid_description">Enter your bid value:</string>
+    <string name="bid_item_bid_value_hint">Your bid (e.g. $ 25.00)</string>
+    <string name="bid_item_starting_bid">Current starting bid:</string>
+    <string name="bid_item_place_bid">Place bid</string>
+    <string name="bid_item_time_left">Time left:</string>
+
+    <string name="bid_item_time_finished">This auction is already finished</string>
+    <string name="bid_item_invalid_bid_value">Your bid value must be bigger than the current bid value</string>
+    <string name="bid_item_success">Your bid was successfully placed</string>
+    <string name="bid_item_failure">An error occurred when trying to place your bid</string>
+    <!-- BidItemActivity - END -->
 
     <!-- BirthdayPickerDialog - BEGIN -->
     <string name="birthday_picker_invalid_birthday">Please, select a valid birth date.</string>

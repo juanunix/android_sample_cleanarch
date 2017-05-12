@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusableInTouchMode="true"
+        android:id="@+id/add_item_change_image_fl">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_100"
+            fresco:placeholderImage="@drawable/default_auction_item_img"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:failureImage="@drawable/default_auction_item_img"
+            fresco:failureImageScaleType="fitCenter"
+            android:id="@+id/add_edit_item_image_sdv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_transp"
+            android:text="@string/add_edit_item_click_to_change"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="16dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_300"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            style="@style/AppTheme.TitleSingleLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/add_item_sold_item_tv"
+            android:visibility="gone"
+            android:textColor="@color/orange_700"/>
+
+        <EditText
+            style="@style/AppTheme.EditText"
+            android:layout_marginTop="8dp"
+            android:hint="@string/add_edit_item_title_hint"
+            android:id="@+id/add_edit_item_title_et"
+            android:inputType="textShortMessage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                style="@style/AppTheme.TitleSingleLine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$"
+                android:layout_marginStart="16dp"/>
+
+            <EditText
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:hint="@string/add_edit_item_starting_bid_hint"
+                android:id="@+id/add_edit_item_starting_bid_et"
+                android:maxLines="1"
+                android:lines="1"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <EditText
+            style="@style/AppTheme.EditText"
+            android:layout_marginTop="8dp"
+            android:maxLines="5"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:gravity="start|top"
+            android:padding="8dp"
+            android:hint="@string/add_edit_item_description_hint"
+            android:id="@+id/add_edit_item_desc_et"/>
+
+        <TextView
+            style="@style/AppTheme.TitleSingleLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_edit_item_note"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="8dp"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:text="@string/add_edit_item_save"
+        android:id="@+id/add_item_save_bt"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_items"
+        android:enabled="true"
+        android:icon="@drawable/ic_loyalty_white_24dp"
+        android:title="@string/main_tab_items"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_bids"
+        android:enabled="true"
+        android:icon="@drawable/ic_shopping_cart_white_24dp"
+        android:title="@string/main_tab_bidding"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_won"
+        android:enabled="true"
+        android:icon="@drawable/ic_gavel_white_24dp"
+        android:title="@string/main_tab_won"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_store"
+        android:enabled="true"
+        android:icon="@drawable/ic_store_white_24dp"
+        android:title="@string/main_tab_store"
+        app:showAsAction="ifRoom" />
+</menu>

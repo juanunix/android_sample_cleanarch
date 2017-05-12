@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="@color/grey_50">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            style="@style/AppTheme.TitleSingleLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/change_img_title"
+            android:textColor="?colorAccent"/>
+
+        <TextView
+            style="@style/AppTheme.TitleSingleLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:maxLines="2"
+            android:text="@string/change_img_desc" />
+
+
+        <EditText
+            style="@style/AppTheme.EditText"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:lines="4"
+            android:gravity="start|top"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/change_img_hint"
+            android:id="@+id/change_img_et"/>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:text="@string/change_img_save"
+        android:id="@+id/change_img_save_bt"/>
+</LinearLayout>

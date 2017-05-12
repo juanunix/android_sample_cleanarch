@@ -8,6 +8,7 @@
 /captures
 .externalNativeBuild
 .idea
-gradlew.bat
+/gradle
 gradlew
+gradlew*
 .gradle/*
